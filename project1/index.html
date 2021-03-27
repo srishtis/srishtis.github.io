@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Srishti Saha</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="../img/favicon.png" rel="icon">
+  <link href="../img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../lib/animate/animate.min.css" rel="stylesheet">
+  <link href="../lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="../lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link href="../lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="../css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: Reveal
+    Theme URL: https://bootstrapmade.com/reveal-bootstrap-corporate-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body id="body">
+
+  <!--==========================
+    Top Bar
+  ============================-->
+  <section id="topbar" class="d-none d-lg-block">
+    <div class="container clearfix">
+      <div class="contact-info float-left">
+        <i class="fa fa-envelope-o"></i> <a href="mailto:contact@example.com">srishtisaha.2809@gmail.com</a>
+        <i class="fa fa-phone"></i> +1-2065811905
+      </div>
+      <div class="social-links float-right">
+        <a href="https://www.linkedin.com/in/srishti-saha-b15975b8/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+		<a href="https://medium.com/@srishtisaha" class="medium"><i class="fa fa-medium"></i></a>
+		<a href="https://github.com/srishtis" class="github"><i class="fa fa-github"></i></a>
+		<a href="Resume_Srishti Saha_Feb2021.pdf" target="_blank"><i class="fa fa-file"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="../index.html" class="scrollto">Srishti Saha</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#body">Home</a></li>
+          <li><a href="projects/index.html">Projects</a></li>
+          <li><a href="#sk_courses">Courses</a></li>
+          <li class="menu-has-children"><a href="">Articles</a>
+            <ul>
+              <li><a href="https://www.yaabot.com/author/srishti-saha/">Yaabot (Technology)</a></li>
+              <li><a href="https://blog.datahut.co/author/srishtisaha/">Datahut (Data Sciences and Analytics)</a></li>
+              <li><a href="https://medium.com/@srishtisaha">Medium (Personal work)</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+
+	
+	<br> </br>
+
+  <main id="main">
+
+    <!--==========================
+      Projects Section
+    ============================-->
+
+      <div class="container">
+        <div class="section-header">
+          <h4>Evaluating Effects of Linguistic Evolution on Classification Models for Banking Documents</h4>
+        </div>
+		
+		<h5>Skills Employed</h5>
+		<ul>
+			<li>Modelling Techniques: Classification Models - Random Forest, Logistic Regression, and Sparse Logistic Regression (l1-regularized)</li>
+			<li>Cross Validation Techniques: Randomized Search CV (l1 penalty)</li>
+			<li>Text Processing Techniques: Preprocessing (Lemmatization, Stop Word Removal, Removal of punctuation, numbers etc.), Keyphrase and keyword extraction</li>
+			<li>Other Statistical Techniques: T-Test, Chi-squared test</li>
+			<li>Tech Stack: Python, MS Excel</li>
+			<li>Libraries: Numpy, Pandas, Sklearn, NLTK, Scipy, RAKE (python-rake)</li>
+		</ul>
+
+		<h5>Introduction</h5>
+        <p> Linguistic Evolution can be broadly defined as the shift in word vocabulary, context and trends in a language
+		in a particular area of interest. In 1968, Weinreich, Labov, and Herzog published a paper, 
+		<i>Empirical foundations for a theory of language change</i> to break this bigger area of study into 5 smaller problems. They are:
+		<ul>
+			<li>The Actuation Problem: Why does a change in a particular feature take place in a
+			particular language at a particular time, but not in other languages with the same feature,
+			or in the same language at some other time?</li>
+			<li>The Transition Problem: How does a language move from one state to another, and
+			how are changes transmitted between speakers?</li>
+			<li>The Embedding Problem: How is change embedded in linguistic structure and social
+			structure?</li>
+			<li>The Evaluation Problem: What role does social awareness play?</li>
+			<li>The Constraints Problem: What changes are possible, and what factors constrain
+			their likelihood?</li>
+		</ul>
+		</p>
+		<p>
+		In this project, we focussed on the Transition Problem. To explain further, this project was aimed 
+		to study the evolution of the vocabulary in banking documents like customer complaints and reviews
+		and its correlation with the performance metrics (especially recall) of classification models built
+		using these text documents itself. The hypothesis we tried to test here, was that as the complexity 
+		(difficulty of readability) of a language increases, the performance of the classification models improves (false-negatives decrease).
+		The model for this particular case would predict mortgage payment faults. However, we anticipate the framework 
+		being scaled to other use-cases as well, with a few minor tweaks in the process described here.
+		The detailed methodology followed in this project is depicted below.
+		</p>
+		
+		<h5>Methodology</h5>
+		<p>The detailed methodology followed in this project is explained below.</p>
+		<img src="languageevol.png" />
+		<br></br>
+		
+		<h5>Impact</h5>
+		<p>
+		The model and framework described here were executed on a partly synthetic and partly deidentified actual data as it was completed as a part of a virtual internship with 
+		a banking company (Summer 2020). The framework and the models were then added to the research repository of the bank for further use in all such similar use-cases.
+		</p>
+		
+		<h5>References</h5>
+		<p>
+		The following papers and literature were referred to, for execution and solution approach design.
+		<ul>
+			<li>Roberts, G; Sneller, B; Empirical foundations for an integrated study of language evolution</li>
+			<li>Hamilton, William L.; Leskovec, Jure; and Jurafsky, Dan; Cultural Shift or Linguistic Drift? Comparing Two Computational Measures of Semantic Change</li>
+			<li>Weinreich, U; Labov, W; and Herzog, Marvin I.; Empirical foundations for an Theory of Language Change</li>
+		</ul>
+		</p>
+
+      </div>
+
+
+
+   <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact" class="wow fadeInUp">
+      <div class="container">
+        <div class="section-header">
+          <h2>Contact Me</h2>
+        </div>
+
+        <div class="row contact-info">
+
+          <div class="col-md-4">
+            <div class="contact-address">
+              <i class="ion-ios-location-outline"></i>
+              <h3>Address</h3>
+              <address>2748 Campus Walk Ave, 20F, Durham-27705, NC, USA</address>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>Phone Number</h3>
+              <p><a href="+918197346936">+1-2065811905</a></p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-email">
+              <i class="ion-ios-email-outline"></i>
+              <h3>Email</h3>
+              <p><a href="mailto:srishti280992@yahoo.com">srishtisaha.2809@gmail.com</a></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="container">
+        <div class="form">
+          <div id="sendmessage">Your message has been sent. Thank you!</div>
+          <div id="errormessage"></div>
+          <form action="" method="post" role="form" class="contactForm">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validation"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+              <div class="validation"></div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
+        </div>
+
+      </div>
+    </section><!-- #contact -->
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; <strong>Srishti Saha</strong>
+      </div>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Reveal
+        -->
+        Design by <a href="https://bootstrapmade.com/">BootstrapMade (Reveal)</a>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="../lib/jquery/jquery.min.js"></script>
+  <script src="../lib/jquery/jquery-migrate.min.js"></script>
+  <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../lib/easing/easing.min.js"></script>
+  <script src="../lib/superfish/hoverIntent.js"></script>
+  <script src="../lib/superfish/superfish.min.js"></script>
+  <script src="../lib/wow/wow.min.js"></script>
+  <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="../lib/magnific-popup/magnific-popup.min.js"></script>
+  <script src="../lib/sticky/sticky.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="../contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="../js/main.js"></script>
+
+</body>
+</html>
