@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Srishti Saha</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="../img/favicon.png" rel="icon">
+  <link href="../img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../lib/animate/animate.min.css" rel="stylesheet">
+  <link href="../lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="../lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link href="../lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="../css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: Reveal
+    Theme URL: https://bootstrapmade.com/reveal-bootstrap-corporate-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body id="body">
+
+  <!--==========================
+    Top Bar
+  ============================-->
+  <section id="topbar" class="d-none d-lg-block">
+    <div class="container clearfix">
+      <div class="contact-info float-left">
+        <i class="fa fa-envelope-o"></i> <a href="mailto:contact@example.com">srishtisaha.2809@gmail.com</a>
+        <i class="fa fa-phone"></i> +1-2065811905
+      </div>
+      <div class="social-links float-right">
+        <a href="https://www.linkedin.com/in/srishti-saha-b15975b8/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+		<a href="https://medium.com/@srishtisaha" class="medium"><i class="fa fa-medium"></i></a>
+		<a href="https://github.com/srishtis" class="github"><i class="fa fa-github"></i></a>
+		<a href="Resume_Srishti Saha_Feb2021.pdf" target="_blank"><i class="fa fa-file"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="../index.html" class="scrollto">Srishti Saha</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#body">Home</a></li>
+          <li><a href="projects/index.html">Projects</a></li>
+          <li><a href="#sk_courses">Courses</a></li>
+          <li class="menu-has-children"><a href="">Articles</a>
+            <ul>
+              <li><a href="https://www.yaabot.com/author/srishti-saha/">Yaabot (Technology)</a></li>
+              <li><a href="https://blog.datahut.co/author/srishtisaha/">Datahut (Data Sciences and Analytics)</a></li>
+              <li><a href="https://medium.com/@srishtisaha">Medium (Personal work)</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+
+	
+	<br> </br>
+
+  <main id="main">
+
+    <!--==========================
+      Projects Section
+    ============================-->
+
+      <div class="container">
+        <div class="section-header">
+          <h4>Solar Photovoltaic in Aerial Imagery</h4>
+        </div>
+		
+		<h5>Skills Employed</h5>
+		<ul>
+			<li>Modelling Techniques: Classification Models - LightGBM, EfficientNet-B4 under AdvProp Training Scheme</li>
+			<li>Cross Validation Techniques: K-fold cross validation</li>
+			<li>Image Processing Techniques: Entropy Calculation, Edge-detection, Grayscale conversion (using Luminance), Histogram of Oriented Gradient (HOG) descriptor</li>
+			<li>Tech Stack: Python</li>
+			<li>Libraries: Numpy, Pandas, Skimage, Sklearn, LightGBM, Tensorflow (Keras)</li>
+		</ul>
+		
+		<h5>Github Link</h5>
+		<p>The Github repository can be accessed from <a href="https://github.com/srishtis/IDS-705-Solar-Photovoltaic-in-Aerial-Imagery">here.</a></p>
+	
+
+		<h5>Introduction</h5>
+        <p> In this project, we consider the problem of using advanced machine learning algorithms, in particular gradient
+		boosting machines and convolutional neural networks (CNN), for the identification of solar panels in aerial
+		images. Our objective is to classify images of buildings and streets that are fed to our algorithms as either
+		containing or not containing solar panels and to, thereby, compare the efficiency of these models for the task
+		of image classification. We consider aerial images restricted to a size of 101x101 pixels with 3 color channels,
+		containing either one or more solar panels each of varying sizes and shapes. Such an approach to identifying
+		solar panels in aerial images can have important applications in a variety of sectors, preeminent among which
+		is its potential to help estimate the scale prevalence of solar power consumption in the US.
+		The key benefit of our approach of using machine learning with regards to estimating solar power prevalence
+		is that the process of labeling images via our algorithms is entirely automated making our approach highly
+		scalable. Without the use of image data, the goal of estimating solar power usage in the US would be
+		incredibly challenging as it would be immensely costly and time consuming. Even with image data, without
+		the use of an algorithm such as ours, the task of identifying solar panels and quantifying their scale would
+		be immensely arduous. As such, machine learning models present a powerful solution to the challenge of
+		identifying solar panels and it is similarly important to determine what algorithms are most successful in
+		this classification exercise. In this report, we compare the performance of the two aforementioned machine
+		learning models for this problem and find that convolutional neural networks clearly outperform the gradient
+		boosting machine, which is perhaps the most powerful of the non-neural network based models. In particular,
+		we make use of the state of the art EfficientNet-B4 with adversarial propagation to achieve near perfect
+		out-of-sample generalization performance on our aerial images.
+		</p>
+		
+		<h5>Data</h5>
+		<p>Our data for this project is comprised of two samples, which we designate as the training and test sets. 
+		Our images were stored in the TIFF format. The training dataset has 1500 images. As the test dataset does not have available 
+		labels, the models we build either use 10-fold cross validation or create a validation set from the training dataset 
+		to assess out-of-sample performance. The training dataset comprises of 505 (33.7%) images having solar panels 
+		and the remaining having no solar panels.</p>
+		
+		<h5>Methodology</h5>
+		<p>In this project, we employed 2 different models. A detailed process flow of each model has been stated below.</p>
+		
+		<h5><u>Light Gradient Boosting Machine Classifier</u></h5>
+		<p> 
+		<img src="lgbm.png" />
+		<br></br>
+		LightGBM is an ensemble model of decision trees which are trained sequentially on the residual errors of previous iterations[3].
+		LightGBM uses histogram-based split finding, which converts continuous features into discrete bins leading
+		to more efficient tree splits, and it further reduces the algorithmic complexity by down-sampling data and
+		features using Gradient Based One Side Sampling and Exclusive Feature Bundling. It can thus outperform
+		other tree-based ensemble models like Extreme Gradient Boosting in terms of computational speed and
+		memory requirements even for large datasets. Since, the feature space in this case is high-dimensional, an
+		optimized algorithm like LightGBM is a sensible choice.
+		</p>
+		
+		<h5><u>EfficientNet-B4 under AdvProp Training Scheme</u></h5>
+		<img src="effnet.png" />
+		<br></br>
+		<p> We use EfficientNet-B4 (containing 19 million
+		tunable parameters) under the AdvProp training scheme with pre-trained weights on ImageNet as our model
+		and fine-tune it via training on our aerial images.
+		</p>
+		
+		
+		<h5>Results</h5>
+		<p>
+		The image below compares the ROC curve from both the models.
+		<br></br>
+		<img src="results.png" width="400" height="400" />
+		<br></br>
+		
+		We find that EfficientNet-B4 consistently performs better than LightGBM both in terms of AUC and confidence
+		scores for the class assignments. We note that EfficientNet-B4 has superior performance in comparison to
+		LightGBM as a result of its ability to capture the spatial relationships in the images, which LightGBM
+		struggles with. To improve the performance of LightGBM, we implement the HOG feature descriptor, which
+		yields notable improvements due to dimensionality reduction and feature importance concentration. However,
+		the performance of LightGBM was still inferior in comparison to EfficientNet-B4. This might be attributed
+		to the fact that HOG is sensitive to the scale and orientation of images. As EfficientNet-B4 is trained with
+		rotated images, it becomes rotation invariant and yields more robust predictions.
+		</p>
+		
+		<h5>Impact</h5>
+		<p>
+		This project was executed as a part of our coursework at Duke Univeristy for the Machine Learning Course. It was a part of an
+		in-class Kaggle competition. This approach got us the first rank in the competition on the basis of the recall score.
+		</p>
+		
+		<h5>References</h5>
+		<p>
+		The following papers and literature were referred to, for execution and solution approach design.
+		<ul>
+			<li>Guolin Ke et al (2017) LightGBM: A Highly Efficient Gradient Boosting Decision Tree</li>
+			<li>JM Malof et al (2016) Automatic detection of solar photovoltaic arrays in high resolution aerial imagery.</li>
+			<li>M Tan et al (2019) EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks</li>
+		</ul>
+		</p>
+
+      </div>
+
+
+
+   <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact" class="wow fadeInUp">
+      <div class="container">
+        <div class="section-header">
+          <h2>Contact Me</h2>
+        </div>
+
+        <div class="row contact-info">
+
+          <div class="col-md-4">
+            <div class="contact-address">
+              <i class="ion-ios-location-outline"></i>
+              <h3>Address</h3>
+              <address>2748 Campus Walk Ave, 20F, Durham-27705, NC, USA</address>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>Phone Number</h3>
+              <p><a href="+918197346936">+1-2065811905</a></p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-email">
+              <i class="ion-ios-email-outline"></i>
+              <h3>Email</h3>
+              <p><a href="mailto:srishti280992@yahoo.com">srishtisaha.2809@gmail.com</a></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="container">
+        <div class="form">
+          <div id="sendmessage">Your message has been sent. Thank you!</div>
+          <div id="errormessage"></div>
+          <form action="" method="post" role="form" class="contactForm">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validation"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+              <div class="validation"></div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
+        </div>
+
+      </div>
+    </section><!-- #contact -->
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; <strong>Srishti Saha</strong>
+      </div>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Reveal
+        -->
+        Design by <a href="https://bootstrapmade.com/">BootstrapMade (Reveal)</a>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="../lib/jquery/jquery.min.js"></script>
+  <script src="../lib/jquery/jquery-migrate.min.js"></script>
+  <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../lib/easing/easing.min.js"></script>
+  <script src="../lib/superfish/hoverIntent.js"></script>
+  <script src="../lib/superfish/superfish.min.js"></script>
+  <script src="../lib/wow/wow.min.js"></script>
+  <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="../lib/magnific-popup/magnific-popup.min.js"></script>
+  <script src="../lib/sticky/sticky.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="../contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="../js/main.js"></script>
+
+</body>
+</html>
