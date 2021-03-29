@@ -103,8 +103,9 @@
 		
 		<h5>Skills Employed</h5>
 		<ul>
-			<li>Modelling Techniques: Regression Models - Linear Regression, Lasso Regression, Time Series Forecasting (ETS, ARIMAX), Clustering (K-means, PAM, DBSCAN)</li>
-			<li>Other Statistical Techniques: A/B testing</li>
+			<li>Modelling Techniques: Regression Models - Linear Regression, Lasso Regression, Random Forest regression, 
+			Time Series Forecasting (ETS, ARIMAX), Clustering (K-means, PAM, DBSCAN)</li>
+			<li>Other Statistical Techniques: Model Ensembling, A/B testing</li>
 			<li>Tech Stack: SQL (Oracle), SAS, R</li>
 			<li>Libraries: caret, forecast, stats, fpc, DBSCAN, shiny (RShiny)</li>
 		</ul>
@@ -126,7 +127,46 @@
 		</p>
 		
 		<h5>Methodology</h5>
-		<p>TBD</p>
+		<p>This project was executed in phases. There were 4 main analytical workflows employed in this project. Below is a brief description of each workflow.</p>
+		<h5><u>Creation of Analytical Dataset</u></h5>
+		<p>The first steps was to join multiple datasets (ex: parts metadata, part sales data, parts supersession data, dealers data, parts suppliers data etc.) and create
+		a single analytical dataset for all part-level analysis. For this, we worked on the Oracle SQL database. In this step, we had to employ concepts of the standard ETL 
+		pipeline to extract (filter), join and roll up some datasets. Some of this data fed directly into the reporting module of the pricing toolkit.</p>
+		
+		<h5><u>Price Recommendations</u></h5>
+		<p><b>Price Elasticity</b></p>
+		<p>In this step, we created a modelling framework to compute demand-price elasticity scores of a part. These scores fed into a subsequent recommendation model
+		as an independent variable. A detailed workflow for the analytical process has been given below. Some of the challenges we faced and solved in this step were:
+		<ul>
+			<li>Huge amount of parts: Since there were a large number of parts, we applied a filtering criterion using the Pareto Principle on the sales. This led to
+			us choosing the top 18% parts for our analysis.</li>
+			<li>Too few price points: Some parts were too new, while some parts had not undergone a lot of price change. Hence, we split the analysis into individual 
+			part level analysis(for parts with more than 3 price points) and cluster level analysis(for parts with less than 3 price points)</li>
+			<li>Supersession of parts: In the manufacturing industry, some components (here, parts) get replaced by functionally similar parts(due to innovation, supplier contracts etc.).
+			This might lead to a sudden drop of increase in part sales. To take care of this, we used information of part supersession both while clustering parts and as internal cannibalization rates in the regression model.</li>
+		</ul>
+		<img src="elasticity.png" height="800" width="1200"/>
+		<br></br>
+		</p>
+		
+		<p><b>Price Recommendation Model</b></p>
+		<p>In this step, we built a regression model (ensemble of Linear Regression and Random Forest) to predict a price point given some variables like (but not limited to)
+		price elasticity, YoY sales, last price point, age of part, current competitor price, part category etc. This model is confidential and so cannot be explained further here.
+		</p>
+		
+		<h5><u>Post-pricing Audits</u></h5>
+		<p>An overview of the process followed for this module has been given below.
+		<img src="ABtests.png" height="780" width="1000"/>
+		<br></br>
+		</p>
+		
+		<h5><u>Toolkit GUI</u></h5>
+		<p>For the implementation of the dashboard, we did so using RShiny as this gave us the flexibility to connect the backend (data extraction), middleware (modelling and EDA)
+		and the frontend in a homogeneous manner. It was an interactive dashboard that gave the users the flexibility to tweak levers and analyze things differently, like 
+		changing variables in a regression model for elasticity computation or changing list/number control parts for a test part in the A/B tests.
+		
+		This tool is used extensively by the in-house data scientists of the client team.</p>
+		
 		
 		<h5>Impact</h5>
 		<p>
